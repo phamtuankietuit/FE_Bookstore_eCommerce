@@ -1,20 +1,20 @@
 import { Routes, Route } from "react-router-dom"
 
-import Login from "./pages/Admin/login"
-import Home from "./pages/Admin/home"
-import Chat from "./pages/Admin/chat"
-import Reports from "./pages/Admin/reports"
-import Account from "./pages/Admin/account"
-import Unauthorized from "./pages/Admin/unauthorized"
-import Orders from "./pages/Admin/orders"
-import Products from "./pages/Admin/products"
-import OrderDetail from "./pages/Admin/order-detail"
-import ProductDetail from "./pages/Admin/product-detail"
-import Customers from "./pages/Admin/customers"
-import CustomerDetail from "./pages/Admin/customer-detail"
-import Promotions from "./pages/Admin/promotions"
-import PromotionDetail from "./pages/Admin/promotion-detail"
-import Comments from "./pages/Admin/comments"
+// import Login from "./pages/Admin/login"
+// import Home from "./pages/Admin/home"
+// import Chat from "./pages/Admin/chat"
+// import Reports from "./pages/Admin/reports"
+// import Account from "./pages/Admin/account"
+// import Unauthorized from "./pages/Admin/unauthorized"
+// import Orders from "./pages/Admin/orders"
+// import Products from "./pages/Admin/products"
+// import OrderDetail from "./pages/Admin/order-detail"
+// import ProductDetail from "./pages/Admin/product-detail"
+// import Customers from "./pages/Admin/customers"
+// import CustomerDetail from "./pages/Admin/customer-detail"
+// import Promotions from "./pages/Admin/promotions"
+// import PromotionDetail from "./pages/Admin/promotion-detail"
+// import Comments from "./pages/Admin/comments"
 
 import { default as UserHome } from "./pages/User/home"
 import { default as UserLogin } from "./pages/User/login"
@@ -39,7 +39,7 @@ import { default as UserResultPayment } from "./pages/User/resultPayment"
 
 import Layout from "./pages/Layout"
 import UserLayout from "./components/User/UserLayout"
-import RequireAuth from "./components/RequireAuth"
+// import RequireAuth from "./components/RequireAuth"
 
 import Missing from "./pages/missing"
 
@@ -47,12 +47,12 @@ function App() {
   return (
     <Routes>
       <Route path='/' element={<Layout />}>
-        {/* ADMIN */}
-        {/* public routes */}
+        {/* ADMIN
+        public routes
         <Route path='admin/login' element={<Login />} />
         <Route path='admin/unauthorized' element={<Unauthorized />} />
 
-        {/* protected routes */}
+        protected routes
         <Route element={<RequireAuth allowedRoles={["admin"]} />}></Route>
 
         <Route element={<Home />}>
@@ -71,7 +71,7 @@ function App() {
         <Route element={<RequireAuth allowedRoles={["admin", "staff"]} />}>
           <Route path='admin/chat' element={<Chat />} />
           <Route path='admin/account' element={<Account />} />
-        </Route>
+        </Route> */}
 
         {/* USER */}
         {/* public routes */}
