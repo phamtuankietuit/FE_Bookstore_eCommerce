@@ -430,7 +430,7 @@ const Home = () => {
           <ImageSlider slides={slides} />
 
           <BlockWrapper
-            title={"Danh mục sản phẩm"}
+            title={"Testing ci/cd vercel"}
             icon={
               <svg
                 xmlns='http://www.w3.org/2000/svg'
