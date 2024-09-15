@@ -43,7 +43,7 @@ import UserLayout from "./components/User/UserLayout"
 
 import Missing from "./pages/missing"
 
-const basePath = "/FE_Bookstore_eCommerce/"
+const basePath = "/FE_Bookstore_eCommerce"
 
 function App() {
   return (
@@ -78,7 +78,7 @@ function App() {
         {/* USER */}
         {/* public routes */}
         <Route element={<UserLayout />}>
-          <Route path='/' element={<UserHome />} />
+          <Route path='' element={<UserHome />} />
 
           <Route path='user/catalog' element={<UserCatalog />} />
 
@@ -126,7 +126,7 @@ function App() {
 
         {/* catch all */}
         <Route path='*' element={<Missing />} />
-        <Route path='/user/result' element={<UserResultPayment />} />
+        <Route path='user/result' element={<UserResultPayment />} />
       </Route>
     </Routes>
   )
