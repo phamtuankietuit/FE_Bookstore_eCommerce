@@ -43,12 +43,10 @@ import UserLayout from "./components/User/UserLayout"
 
 import Missing from "./pages/missing"
 
-const basePath = "/FE_Bookstore_eCommerce"
-
 function App() {
   return (
     <Routes>
-      <Route path={`${basePath}`} element={<Layout />}>
+      <Route path={`/`} element={<Layout />}>
         {/* ADMIN
         public routes
         <Route path='admin/login' element={<Login />} />
